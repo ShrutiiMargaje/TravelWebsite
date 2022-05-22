@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/62dc28f041.js" crossorigin="anonymous"></script>
+    <title>TRAVEL_WEBSITE|CONTACT-PAGE</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="nav bg-dark">
+        <div class="container">
+            <h2 class="logo lg-heading text-light">WT</h2>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="./index.html">HOME</a></li>
+                <li class="nav-item"><a href="./about.html">ABOUT US</a></li>
+                <li class="nav-item"><a href="./contact.html">CONTACT<a></li>
+             </ul>
+        </div>
+    </nav>
+
+    <section class="contact-form">
+        <div class="container">
+            <div class="form-wrapper">
+
+                <div class="company-address">Space for company address
+                    <div class="address-group">
+                        <i class="fas fa-map-marker-alt fa-2x text-red"></i>
+                        <h2 class="text-grey md-heading">Location</h2>
+                        <p>2261 Jaykrushan colony city name town name </p>
+                    </div>
+                    <div class="address-group">
+                        <i class=" far fa-envelope fa-2x text-red"></i>
+                        <h2 class="text-grey md-heading">Email</h2>
+                        <p>hrishitesh@mycompany.com</p>
+                    </div>
+                    <div class="address-group">
+                        <i class="fas fa-phone-square-alt fa-2x text-red"></i>
+                        <h2 class="text-grey md-heading">Call</h2>
+                        <p>+91877876548</p>
+                    </div>
+                    <img src="./img/company-img.jpg" alt="Company image">
+                </div>
+                 <form action="connect.php" class="form" method="post">
+                     <h1 class="lg-heading text-black">CONTACT US</h1>
+                     <p class="text-grey">Let us know your question,suggestion and concerns by filling out the form below</p>
+                     <div class="form-group">
+                         <label for="username">Username</label>
+                         <input type="text" placeholder="Username" id="username" name="username" required>
+                     </div>
+                     <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Email" id="email" name="email" required>
+                    </div>
+                     <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="text" placeholder="Phone" id="phone" name="phone" required>
+                     </div>
+                    
+                     <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea placeholder="Message" id="message" name="message"  required></textarea>
+                    </div>
+                    <button type="submit" class="form-btn">Submit</button>
+                 </form>
+    
+            </div>
+
+        </div>
+        
+        
+    </section>
+    <footer class="footer">
+        <div class="social-media-links">
+            <i class="fab fa-facebook fa-4x"></i>
+            <i class="fab fa-instagram fa-4x"></i>
+            <i class="fab fa-twitter fa-4x"></i>
+        </div>
+        <p class="md-heading">world travel &copy; 2020, all Rights Reserved</p>
+     </footer>
+     
+
+    
+
+</body>
+</html>

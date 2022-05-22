@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html,ul li,a***********************html element styling********************** */
+html{
+    font-size: 60.5%;
+}
+body{
+    font-size: 'Montserrat', sans-serif;
+}
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+pi, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    word-spacing: o.20em;
+}
+h1,h2,h3{
+    letter-spacing: 0.15em;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+/* *****************utility classes************** */
+.container{
+    /* max-width: 1200px; */
+    width: 90%;
+    margin: 0 auto;
+}
+.lg-heading{
+    font-size: 3.5rem;
+    
+}
+.md-heading{
+    font-size: 2.2rem;
+}
+.bg-dark{
+    background-color: #263238;
+}
+.text-red{
+    color:#e63946;
+}
+.text-light{
+    color:#f4f4f4;
+}
+.text-black{
+    color: #333;
+}
+.text-grey{
+    color: #555;
+}
+.btn{
+    display: inline-block;
+    padding:0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+.btn-primary{
+    background-color: white;
+    border-radius: 10em;
+}
+.btn-primary:hover{
+    background-color: #ddd;
+}
+.btn-secondary{
+    border: 2px solid red;
+    border-radius: 15px;
+    color: red;
+    padding-left: 1.7em;
+    margin: 0.5em 0;
+}
+.btn-secondary:hover{
+    background-color: #fcf3f2;
+}
+
+
+
+/* ******************heading styling************** */
+.header{
+    position: relative;
+    color: white;
+    border: 10px;
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/header-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.nav{
+    /* border: 4px solid white;     ...........if navigation setup completed we have to remove this border */
+    padding: 1rem;
+}
+.nav .logo{
+    float: left;
+    margin-bottom: 0.5em;
+}
+.nav .nav-items{
+    float: right;
+    margin-top: 1rem; 
+    text-transform: uppercase;
+   
+}
+.nav .nav-item{
+    display:inline-block;
+    padding:1rem;
+
+}
+.nav-item:hover{
+    transform: translateY(-1.5rem);
+}
+
+ .nav a:link,
+ .nav a:visited{
+    color:#f4f4f4;
+}
+.nav a:hover{
+    border-bottom: 5px solid #fff;
+    
+}
+nav::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* ********************header content styling**********************/
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+/* header .header-content{
+    margin:150px auto;
+    width: 500px;
+    text-align: center;
+} */
+.header-content{
+    /* border: 2px solid white; */
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+    
+}
+
+/* ****************showcase section styling***************/
+.showcase{
+    background: #ddd;
+    padding: 5rem 25rem 5rem 25rem;
+}
+.top5{
+    /* border: 2px solid red; */
+    width: 90%;
+    height: 10px;
+    font-size: 4rem;
+    font-weight: 300;
+    /* color: #e63946; */
+    margin-bottom: 5rem ;
+    padding-left: 5rem;
+    background-color: rgb(156, 107, 154);
+    color: seashell;
+}
+.top5:hover{
+    color: plum;
+}
+.top5:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.row{
+    /* border: 2px solid red; */
+    height: 500px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0 #aaa;
+}
+.row1{
+    margin-bottom: 10rem;
+    
+}
+.row1:hover{
+    transform: translateX(8rem);
+      
+}
+.row2:hover{
+    transform: translateX(8rem);
+      
+}
+.row3:hover{
+    transform: translateX(8rem);
+      
+}
+.row4:hover{
+    transform: translateX(8rem);
+      
+}
+
+.row1 .img-box,
+.row2 .text-box,
+.row3 .img-box,
+.row4 .text-box{
+    float: left;
+    width: 50%;
+
+}
+.row2 .img-box,
+.row1 .text-box,
+.row3 .text-box,
+.row4 .img-box{
+    float: right;
+    width: 50%;
+}
+
+.row .img-box{
+    /* border: 6px solid red; */
+    height: 100%;
+}
+.row .text-box{
+    /* border: 2px solid green; */
+    padding: 5rem;
+}
+.row1 .img-box{
+    background:url('../img/shuttersto-efbf63a8e70557c.jpg');
+    background-size: cover;
+}
+.row2 .img-box{
+    background:url('../img/photography-in-ladakh3.jpg');
+    background-size: cover;
+} 
+.row3 .img-box{
+    background:url('../img/nachi-shrine-japan-GettyImages-640039952.jpg');
+    background-size: cover;
+}
+.row4 .img-box{
+    background: url('../img/One-day-in-Goa-Itinerary.jpg');
+    background-size: cover;
+}
+.row3{
+    margin-top: 5rem;
+}
+.row4{
+    margin-top: 5rem;
+}
+.manymore{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 10px;
+    font-size: 4rem;
+    font-weight: 300;
+    /* color: #e63946; */
+    margin-bottom: 5rem ;
+    margin-top: 5rem ;
+    padding-top: 2rem;
+    padding-left: 35rem;
+    /* background-color: rgb(156, 107, 154); */
+    color:rgb(37, 20, 20)
+}
+ 
+/* if we have to more resonsive our page */
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ****************feature section styling*********** */
+
+.feature{
+    padding: 10rem 0;
+    /* background:white; */
+}
+.coloum{
+     /* border: 2px solid red; */
+     height: 350px;
+     background-color: #fff;
+     box-shadow: 0 0 20px 0 #333;
+
+ }
+ .box-wrapper::after{
+     content: '';
+     display:block;
+     clear: both;
+
+ }
+.adventures{
+    /* background-color: rgb(61, 49, 49); */
+    float: left;
+    width: 33.333333%;
+    /* color: blanchedalmond; */
+    padding: 5rem;
+}
+.adventures:hover{
+    transform:translateY(-7rem)
+}
+.less-prise{
+    float: left;
+    width: 33.33333%;
+    padding: 5rem;
+}
+.less-prise:hover{
+    transform: translateY(-7rem);
+}
+.experience{
+    float: left;
+    width: 33.333333%;
+    padding: 5rem;
+}
+.experience:hover{
+    transform: translateY(-7rem);
+}
+.adventures,
+.experience{
+    background-color: #263238;
+    color: #fff;
+
+}
+.less-prise{
+    background:linear-gradient( 109.6deg,  rgba(209,0,116,1) 11.2%, rgba(110,44,107,1) 91.1% );
+    color: #fff;
+}
+
+
+
+/* **********footer********* */
+.footer{ 
+    text-align: center;
+    background-color: #263238;
+    color: #f4f4f4;
+}
+.social-media-links i{
+    padding-top: 3rem;
+    margin: 1rem;
+    /* padding-bottom: 2rem; */
+}
+
+
+/* ************************about page styling************** */
+.about{
+    padding:0 15rem 15rem 15rem;
+}
+.container{
+    padding: 5rem 0;
+}
+.about-heading{
+    border-bottom: 5px solid red;
+    width: 100%;
+}
+
+/* **************about wrapper styling************** */
+.about-wrapper{
+    /* border:2px solid purple; */
+    text-align: center;
+    margin-top: 2rem;
+}
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+}
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+}
+.about-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+
+}
+/* ************how to give a tic************** */
+.about-wrapper li::before{
+    content: '\2713';
+    color: red;
+    font-weight: bold;
+    padding: 1rem;
+}
+.about-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* *****************counts styling******************* */
+.counts{
+    /* border: 6px solid red; */
+    margin-top: 3rem;
+    /* width: 75%; */
+}
+.counts-item{
+    float: left;
+    /* border: 2px solid red; */
+    width: 25%;
+    text-align: center;
+}
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.counts span{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.counts p{
+    font-weight: 700;
+    color:grey;
+    font-size: 1.8rem;
+}
+
+/* *************banner styling************** */
+
+.ctn-banner{
+    height: 50px;
+    padding-top: 2rem;
+    background:linear-gradient( 109.6deg,  rgba(209,0,116,1) 11.2%, rgba(110,44,107,1) 91.1% );
+    box-shadow: 5px 5px 10px rgb(26, 23, 23);
+    margin:4rem 4rem 0 4rem;
+}
+.cta-line{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0.1rem;
+}
+.ctn-banner{
+    width: 100;
+    /* float: left; */
+}
+
+.ctn-bannerleft{
+    width: 60%;
+    float: left;
+    
+}
+
+.ctn-bannerright{
+    width: 30%;
+    float: right;
+    text-align: right;
+}
+
+
+.ctn-banner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.btn-cta{
+    border: 2px solid whitesmoke;
+    display: inline-block;
+    padding: 0.3rem 0 7rem 2.5rem;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+}
+
+/* ****************contact page styling*************** */
+.contact-form{
+    padding: 5rem 0;
+    background: #f7f7f7;
+
+}
+/* .form-wrapper{
+    border: 10px solid red;
+} */
+.form-wrapper .company-address{
+    background: #fff;
+    height: 760px;
+    /* border: 4px dotted green; */
+    width: 49%;
+    float: left;
+    padding: 1rem;
+}
+/* below two css is for ..we want to sighn and their name side by side */
+.form-wrapper .company-address i{
+    display: inline-block;
+}
+.form-wrapper .company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+.form-wrapper .company-address{
+    margin-bottom: 3rem;
+}
+.form-wrapper .company-address img{
+    max-width: 90%;
+    min-height: 40rem;
+    object-fit: cover;
+    object-position:right;
+}
+
+
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* *****************form styling****************** */
+.form-wrapper .form{
+    font-size: 1.6rem;
+    height: 760px;
+    background: #fff;
+    /* border: 4px dotted green; */
+    width: 49%;
+    float: right;
+    padding: 1rem;
+}
+.form h1::after{
+    content: '';
+    display: block;
+    border: 3px solid #e63946;
+    width: 100%;
+}
+
+.form-wrapper .form label{
+    display: block;
+}
+.form-wrapper .form input{
+    padding: 0.3rem;
+    width: 100%;
+}
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+}
+.form-wrapper .form-group label::after{
+    content: '* ';
+    color:#e63946;
+}
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+.form-btn{
+    display: block;
+    margin:0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #fff;
+    outline: none;
+    border:none;
+    cursor: pointer;
+}
+
+  /* **********************media querise*********************** */
+
+ @media (max-width:500px){
+     html{
+         font-size: 8px;
+     }
+
+     .nav .nav-items, .nav .logo{
+         float: none;
+         display: block;
+         width: 100%;
+         text-align: center;
+     }
+     .header-content h1{
+         display: none;
+     }
+
+     .showcase{
+         width: 100%;
+         height: auto;
+     }
+     .row .img-box,
+     .row .text-box{
+         float: none;
+         width: 100%;
+         text-align: center;
+     }
+
+     .feature .coloum{
+        float: none;
+        width: 100%;
+        text-align: center;
+     }
+
+    .ctn-bannerright,
+    .ctn-bannerleft{
+         float: none;
+         width: 100%;
+         text-align: center;
+     }
+
+     .ctn-banner{
+         max-width: 100%;
+         float: none;
+         /* display:inline-block; */
+         width: 100%;
+         text-align: center;
+     }
+ }
